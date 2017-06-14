@@ -8,9 +8,9 @@
     "port": 23714,
     "url": "",
     "database": "comprolacasa",
-    "password": "123456",
+    "password": "${MONGO_PASSWORD}",
     "name": "mongo",
-    "user": "cesar",
+    "user": "${MONGO_USER}",
     "connector": "mongodb"
   }
 }
