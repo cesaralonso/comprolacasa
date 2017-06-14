@@ -1,0 +1,17 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongo": {
+    "host": "ds023714.mlab.com",
+    "port": 23714,
+    "url": "",
+    "database": "comprolacasa",
+    "password": "123456",
+    "name": "mongo",
+    "user": "cesar",
+    "connector": "mongodb"
+  }
+}
+
