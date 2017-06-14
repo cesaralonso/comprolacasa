@@ -21,7 +21,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "messages": {
+      "type": "hasMany",
+      "model": "Message",
+      "foreignKey": "personId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
