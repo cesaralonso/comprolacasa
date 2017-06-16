@@ -1,0 +1,33 @@
+{
+  "name": "Notificacion",
+  "plural": "notificaciones",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "created": {
+      "type": "date"
+    },
+    "modified": {
+      "type": "date"
+    },
+    "toPersonId": {
+      "type": "string"
+    },
+    "texto": {
+      "type": "string"
+    },
+    "prioridad": {
+      "type": "number"
+    },
+    "categoria": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

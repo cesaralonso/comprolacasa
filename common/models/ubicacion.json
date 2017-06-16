@@ -1,0 +1,80 @@
+{
+  "name": "Ubicacion",
+  "plural": "Ubicaciones",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "lat": {
+      "type": "string",
+      "required": true,
+      "default": "200.8380589"
+    },
+    "lng": {
+      "type": "string",
+      "required": true,
+      "default": "-103.6029725"
+    },
+    "calle": {
+      "type": "string"
+    },
+    "numint": {
+      "type": "string",
+      "required": true
+    },
+    "numext": {
+      "type": "number",
+      "required": true
+    },
+    "colonia_id": {
+      "type": "string"
+    },
+    "delegacion": {
+      "type": "string"
+    },
+    "localidad": {
+      "type": "string"
+    },
+    "municipio": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "pais": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "colonia": {
+      "type": "hasOne",
+      "model": "Colonia",
+      "foreignKey": ""
+    },
+    "localidad": {
+      "type": "hasOne",
+      "model": "Localidad",
+      "foreignKey": ""
+    },
+    "municipio": {
+      "type": "hasOne",
+      "model": "Municipio",
+      "foreignKey": ""
+    },
+    "pais": {
+      "type": "hasOne",
+      "model": "Pais",
+      "foreignKey": ""
+    },
+    "estado": {
+      "type": "hasOne",
+      "model": "Estado",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

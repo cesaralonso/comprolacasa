@@ -1,0 +1,45 @@
+{
+  "name": "PagoTarjeta",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "titulo": {
+      "type": "string"
+    },
+    "numero": {
+      "type": "string"
+    },
+    "clave": {
+      "type": "string"
+    },
+    "vence_mes": {
+      "type": "number"
+    },
+    "vende_ano": {
+      "type": "number"
+    },
+    "verificado": {
+      "type": "boolean",
+      "default": false
+    },
+    "prioridad": {
+      "type": "number"
+    },
+    "principal": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "desarrolladora": {
+      "type": "belongsTo",
+      "model": "Desarrolladora",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

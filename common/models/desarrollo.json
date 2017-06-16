@@ -1,0 +1,60 @@
+{
+  "name": "Desarrollo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string"
+    },
+    "rfc": {
+      "type": "string"
+    },
+    "descipcion": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "ubicacion": {
+      "type": "hasOne",
+      "model": "Ubicacion",
+      "foreignKey": ""
+    },
+    "telefonos": {
+      "type": "hasMany",
+      "model": "Telefono",
+      "foreignKey": ""
+    },
+    "creditos": {
+      "type": "hasMany",
+      "model": "Credito",
+      "foreignKey": ""
+    },
+    "desarrolladora": {
+      "type": "belongsTo",
+      "model": "Desarrolladora",
+      "foreignKey": ""
+    },
+    "agentes": {
+      "type": "hasMany",
+      "model": "Agente",
+      "foreignKey": ""
+    },
+    "horarioAtencionDesarrollos": {
+      "type": "hasMany",
+      "model": "HorarioAtencionDesarrollo",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

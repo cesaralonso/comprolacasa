@@ -1,0 +1,20 @@
+{
+  "name": "HorarioAtencionDesarrolladora",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "desde": {
+      "type": "date"
+    },
+    "hasta": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

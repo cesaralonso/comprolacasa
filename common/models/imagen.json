@@ -1,0 +1,31 @@
+{
+  "name": "Imagen",
+  "plural": "imagenes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "src": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "orden": {
+      "type": "number"
+    },
+    "principal": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

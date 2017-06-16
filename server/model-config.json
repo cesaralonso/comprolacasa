@@ -42,5 +42,93 @@
   "Message": {
     "dataSource": "mongo",
     "public": true
+  },
+  "Telefono": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Desarrolladora": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Ubicacion": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Colonia": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Sitiodeinteres": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Localidad": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Municipio": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Pais": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Imagen": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Estado": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Credito": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Desarrollo": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Agente": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Propiedad": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "HorarioAtencionAgente": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "HorarioAtencionDesarrolladora": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "HorarioAtencionDesarrollo": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Interesado": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "HorarioAtencionInteresado": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "PagoTarjeta": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Cita": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Notificacion": {
+    "dataSource": "mongo",
+    "public": true
   }
 }

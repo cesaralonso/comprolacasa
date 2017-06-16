@@ -1,0 +1,30 @@
+{
+  "name": "Telefono",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "numero": {
+      "type": "string",
+      "required": true
+    },
+    "lada": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "verificado": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,98 @@
+{
+  "name": "Propiedad",
+  "plural": "propiedades",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "titulo": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "created": {
+      "type": "date"
+    },
+    "modified": {
+      "type": "date"
+    },
+    "banos": {
+      "type": "number"
+    },
+    "mediosbanos": {
+      "type": "number"
+    },
+    "habitaciones": {
+      "type": "number"
+    },
+    "cajones": {
+      "type": "number"
+    },
+    "saladeestar": {
+      "type": "boolean",
+      "default": false
+    },
+    "jardintrasero": {
+      "type": "boolean"
+    },
+    "jardindelantero": {
+      "type": "boolean"
+    },
+    "balcones": {
+      "type": "number"
+    },
+    "vistapanoramica": {
+      "type": "boolean"
+    },
+    "todoslosservicios": {
+      "type": "boolean"
+    },
+    "precio": {
+      "type": "number"
+    },
+    "moneda": {
+      "type": "string"
+    },
+    "mantenimiento": {
+      "type": "number"
+    },
+    "cuota": {
+      "type": "number"
+    },
+    "cuota_moneda": {
+      "type": "string"
+    },
+    "video360": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "desarrollo": {
+      "type": "belongsTo",
+      "model": "Desarrollo",
+      "foreignKey": ""
+    },
+    "agentes": {
+      "type": "hasMany",
+      "model": "Agente",
+      "foreignKey": ""
+    },
+    "telefonos": {
+      "type": "hasMany",
+      "model": "Telefono",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

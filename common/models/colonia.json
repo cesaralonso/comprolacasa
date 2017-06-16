@@ -1,0 +1,52 @@
+{
+  "name": "Colonia",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "clasessociales": {
+      "type": [
+        "string"
+      ]
+    },
+    "habitantes": {
+      "type": "number"
+    },
+    "indiceamigabilidad": {
+      "type": "number"
+    },
+    "indiceinseguridad": {
+      "type": "number"
+    },
+    "indicecontaminacion": {
+      "type": "string"
+    },
+    "delegacion": {
+      "type": "string"
+    },
+    "localidad": {
+      "type": "string"
+    },
+    "municipio": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "pais": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "sitiosdeinteres": {
+      "type": "hasMany",
+      "model": "Sitiodeinteres",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Agente",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string"
+    },
+    "apellidos": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "ubicacion": {
+      "type": "hasOne",
+      "model": "Ubicacion",
+      "foreignKey": ""
+    },
+    "telefonos": {
+      "type": "hasMany",
+      "model": "Telefono",
+      "foreignKey": ""
+    },
+    "desarrollos": {
+      "type": "hasAndBelongsToMany",
+      "model": "Desarrollo",
+      "foreignKey": ""
+    },
+    "horarioAtencionAgentes": {
+      "type": "hasMany",
+      "model": "HorarioAtencionAgente",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

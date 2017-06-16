@@ -1,0 +1,41 @@
+{
+  "name": "Interesado",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "personId": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "horarioAtencionInteresados": {
+      "type": "hasMany",
+      "model": "HorarioAtencionInteresado",
+      "foreignKey": ""
+    },
+    "ubicacion": {
+      "type": "hasOne",
+      "model": "Ubicacion",
+      "foreignKey": ""
+    },
+    "telefonos": {
+      "type": "hasMany",
+      "model": "Telefono",
+      "foreignKey": ""
+    },
+    "person": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

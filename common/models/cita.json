@@ -1,0 +1,57 @@
+{
+  "name": "Cita",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "fecha": {
+      "type": "date"
+    },
+    "propiedadId": {
+      "type": "string"
+    },
+    "recordarporalarma": {
+      "type": "boolean"
+    },
+    "recordarpormail": {
+      "type": "boolean"
+    },
+    "recojerensuubicacion": {
+      "type": "boolean"
+    },
+    "recojerfecha": {
+      "type": "date"
+    },
+    "recojerhora": {
+      "type": "string"
+    },
+    "recojerzonahoraria": {
+      "type": "string"
+    },
+    "recojerpasajeros": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "recojerubicacion": {
+      "type": "hasOne",
+      "model": "Ubicacion",
+      "foreignKey": ""
+    },
+    "agente": {
+      "type": "hasMany",
+      "model": "Agente",
+      "foreignKey": ""
+    },
+    "propiedads": {
+      "type": "hasOne",
+      "model": "Propiedad",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

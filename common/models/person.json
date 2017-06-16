@@ -7,7 +7,11 @@
     "validateUpsert": true
   },
   "properties": {
-    "name": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "apellidos": {
       "type": "string",
       "required": true
     },
@@ -15,9 +19,17 @@
       "type": "string",
       "required": true
     },
+    "telefono": {
+      "type": "string",
+      "required": true
+    },
     "email": {
       "type": "string",
       "required": true
+    },
+    "verificado": {
+      "type": "boolean",
+      "required": false
     }
   },
   "validations": [],

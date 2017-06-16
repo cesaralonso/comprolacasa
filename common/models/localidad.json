@@ -1,0 +1,37 @@
+{
+  "name": "Localidad",
+  "plural": "localidades",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "indicecontaminacion_min": {
+      "type": "string"
+    },
+    "indicecontaminacion_max": {
+      "type": "string",
+      "default": "nombre"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "municipio": {
+      "type": "string"
+    },
+    "pais": {
+      "type": "string"
+    },
+    "temperatura_min": {
+      "type": "string"
+    },
+    "temperatura_max": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

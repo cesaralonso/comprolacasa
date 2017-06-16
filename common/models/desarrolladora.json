@@ -1,0 +1,57 @@
+{
+  "name": "Desarrolladora",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "string"
+    },
+    "modalidadpago": {
+      "type": "string",
+      "default": "pagoporleadsporcasapordia"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "telefonos": {
+      "type": "hasMany",
+      "model": "Telefono",
+      "foreignKey": ""
+    },
+    "ubicacion": {
+      "type": "hasOne",
+      "model": "Ubicacion",
+      "foreignKey": ""
+    },
+    "desarrollos": {
+      "type": "hasMany",
+      "model": "Desarrollo",
+      "foreignKey": ""
+    },
+    "horaAtencionDesarrolladoras": {
+      "type": "hasMany",
+      "model": "HoraAtencionDesarrolladora",
+      "foreignKey": ""
+    },
+    "horarioAtencionDesarrolladoras": {
+      "type": "hasMany",
+      "model": "HorarioAtencionDesarrolladora",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
