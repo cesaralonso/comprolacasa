@@ -20,6 +20,10 @@
     },
     "logo": {
       "type": "string"
+    },
+    "created": {
+      "type": "date",
+      "required": false
     }
   },
   "validations": [],

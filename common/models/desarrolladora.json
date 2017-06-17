@@ -22,6 +22,10 @@
     "modalidadpago": {
       "type": "string",
       "default": "pagoporleadsporcasapordia"
+    },
+    "created": {
+      "type": "date",
+      "required": false
     }
   },
   "validations": [],

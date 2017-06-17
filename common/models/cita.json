@@ -9,13 +9,6 @@
     "fecha": {
       "type": "date"
     },
-    "tipo": {
-      "type": "string",
-      "default": "CITATELEFONICA"
-    },
-    "propiedadId": {
-      "type": "string"
-    },
     "recordarporalarma": {
       "type": "boolean"
     },
@@ -36,6 +29,10 @@
     },
     "recojerpasajeros": {
       "type": "number"
+    },
+    "created": {
+      "type": "date",
+      "required": false
     }
   },
   "validations": [],

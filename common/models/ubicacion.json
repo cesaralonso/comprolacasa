@@ -28,22 +28,19 @@
       "type": "number",
       "required": true
     },
-    "colonia_id": {
+    "coloniaNombre": {
       "type": "string"
     },
-    "delegacion": {
+    "localidadNombre": {
       "type": "string"
     },
-    "localidad": {
+    "municipioNombre": {
       "type": "string"
     },
-    "municipio": {
+    "estadoNombre": {
       "type": "string"
     },
-    "estado": {
-      "type": "string"
-    },
-    "pais": {
+    "paisNombre": {
       "type": "string"
     }
   },

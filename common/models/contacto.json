@@ -1,0 +1,35 @@
+{
+  "name": "Contacto",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "fecha": {
+      "type": "date"
+    },
+    "recordarporalarma": {
+      "type": "boolean"
+    },
+    "recordarporemail": {
+      "type": "boolean"
+    },
+    "hora": {
+      "type": "string"
+    },
+    "personId": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "person": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

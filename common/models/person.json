@@ -19,10 +19,6 @@
       "type": "string",
       "required": true
     },
-    "telefono": {
-      "type": "string",
-      "required": true
-    },
     "email": {
       "type": "string",
       "required": true
@@ -30,6 +26,9 @@
     "verificado": {
       "type": "boolean",
       "required": false
+    },
+    "created": {
+      "type": "date"
     }
   },
   "validations": [],
@@ -38,8 +37,43 @@
       "type": "hasMany",
       "model": "Message",
       "foreignKey": "personId"
+    },
+    "agente": {
+      "type": "hasOne",
+      "model": "Agente",
+      "foreignKey": ""
+    },
+    "propiedades": {
+      "type": "hasMany",
+      "model": "Propiedad",
+      "foreignKey": ""
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }

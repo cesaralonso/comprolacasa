@@ -8,10 +8,10 @@
   },
   "properties": {
     "indicecontaminacion_min": {
-      "type": "string"
+      "type": "number"
     },
     "indicecontaminacion_max": {
-      "type": "string",
+      "type": "number",
       "default": "nombre"
     },
     "nombre": {
@@ -20,25 +20,13 @@
     "municipio": {
       "type": "string"
     },
-    "estado": {
-      "type": "string"
-    },
-    "pais": {
-      "type": "string"
-    },
     "temperatura_min": {
-      "type": "string"
+      "type": "number"
     },
     "temperatura_max": {
-      "type": "string"
+      "type": "number"
     },
     "municipioId": {
-      "type": "string"
-    },
-    "estadoId": {
-      "type": "string"
-    },
-    "paisId": {
       "type": "string"
     }
   },

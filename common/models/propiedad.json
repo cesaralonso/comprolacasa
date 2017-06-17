@@ -20,7 +20,8 @@
       "type": "string"
     },
     "created": {
-      "type": "date"
+      "type": "date",
+      "required": false
     },
     "modified": {
       "type": "date"
@@ -106,6 +107,21 @@
       "type": "hasMany",
       "model": "Llamada",
       "foreignKey": ""
+    },
+    "contactos": {
+      "type": "hasMany",
+      "model": "Contacto",
+      "foreignKey": ""
+    },
+    "ubicacion": {
+      "type": "hasOne",
+      "model": "Ubicacion",
+      "foreignKey": ""
+    },
+    "creador": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": "personId"
     }
   },
   "acls": [],

@@ -6,11 +6,12 @@
     "validateUpsert": true
   },
   "properties": {
-    "nombre": {
+    "rfc": {
       "type": "string"
     },
-    "apellidos": {
-      "type": "string"
+    "created": {
+      "type": "date",
+      "required": false
     }
   },
   "validations": [],
@@ -29,6 +30,11 @@
       "type": "hasMany",
       "model": "HorarioAtencionAgente",
       "foreignKey": ""
+    },
+    "person": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": "person"
     }
   },
   "acls": [],
