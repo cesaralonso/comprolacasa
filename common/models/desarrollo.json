@@ -53,6 +53,11 @@
       "type": "hasMany",
       "model": "HorarioAtencionDesarrollo",
       "foreignKey": ""
+    },
+    "propiedades": {
+      "type": "hasMany",
+      "model": "Propiedad",
+      "foreignKey": ""
     }
   },
   "acls": [],

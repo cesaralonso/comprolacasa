@@ -9,6 +9,10 @@
     "fecha": {
       "type": "date"
     },
+    "tipo": {
+      "type": "string",
+      "default": "CITATELEFONICA"
+    },
     "propiedadId": {
       "type": "string"
     },

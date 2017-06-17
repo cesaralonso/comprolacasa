@@ -21,6 +21,9 @@
     "created": {
       "type": "date",
       "required": false
+    },
+    "leido": {
+      "type": "boolean"
     }
   },
   "validations": [],

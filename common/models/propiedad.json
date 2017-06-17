@@ -63,7 +63,7 @@
       "type": "string"
     },
     "mantenimiento": {
-      "type": "number"
+      "type": "boolean"
     },
     "cuota": {
       "type": "number"
@@ -90,6 +90,21 @@
     "telefonos": {
       "type": "hasMany",
       "model": "Telefono",
+      "foreignKey": ""
+    },
+    "imagenes": {
+      "type": "hasMany",
+      "model": "Imagen",
+      "foreignKey": ""
+    },
+    "citas": {
+      "type": "hasMany",
+      "model": "Cita",
+      "foreignKey": ""
+    },
+    "llamadas": {
+      "type": "hasMany",
+      "model": "Llamada",
       "foreignKey": ""
     }
   },

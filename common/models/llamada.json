@@ -1,14 +1,22 @@
 {
-  "name": "Pais",
-  "plural": "paises",
+  "name": "Llamada",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "nombre": {
+    "fecha": {
+      "type": "date"
+    },
+    "hora": {
       "type": "string"
+    },
+    "personId": {
+      "type": "string"
+    },
+    "contestada": {
+      "type": "boolean"
     }
   },
   "validations": [],

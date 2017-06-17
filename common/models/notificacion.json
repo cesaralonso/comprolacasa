@@ -24,6 +24,9 @@
     },
     "categoria": {
       "type": "string"
+    },
+    "leido": {
+      "type": "boolean"
     }
   },
   "validations": [],

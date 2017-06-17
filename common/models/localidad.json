@@ -20,6 +20,9 @@
     "municipio": {
       "type": "string"
     },
+    "estado": {
+      "type": "string"
+    },
     "pais": {
       "type": "string"
     },
@@ -27,6 +30,15 @@
       "type": "string"
     },
     "temperatura_max": {
+      "type": "string"
+    },
+    "municipioId": {
+      "type": "string"
+    },
+    "estadoId": {
+      "type": "string"
+    },
+    "paisId": {
       "type": "string"
     }
   },

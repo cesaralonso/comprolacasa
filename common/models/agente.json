@@ -25,11 +25,6 @@
       "model": "Telefono",
       "foreignKey": ""
     },
-    "desarrollos": {
-      "type": "hasAndBelongsToMany",
-      "model": "Desarrollo",
-      "foreignKey": ""
-    },
     "horarioAtencionAgentes": {
       "type": "hasMany",
       "model": "HorarioAtencionAgente",

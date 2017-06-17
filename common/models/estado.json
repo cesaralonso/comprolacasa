@@ -8,6 +8,9 @@
   "properties": {
     "nombre": {
       "type": "string"
+    },
+    "paisId": {
+      "type": "string"
     }
   },
   "validations": [],

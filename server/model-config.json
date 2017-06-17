@@ -130,5 +130,9 @@
   "Notificacion": {
     "dataSource": "mongo",
     "public": true
+  },
+  "Llamada": {
+    "dataSource": "mongo",
+    "public": true
   }
 }

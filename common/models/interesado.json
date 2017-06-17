@@ -9,7 +9,7 @@
     "personId": {
       "type": "string"
     },
-    "nombre": {
+    "propiedadId": {
       "type": "string"
     }
   },
